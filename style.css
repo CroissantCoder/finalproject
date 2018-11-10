@@ -1,0 +1,40 @@
+
+body {
+	background-color:#e2fff9;
+}
+
+h1 {
+	font-style: "Alfa Slab One";
+	text-align: center;
+	
+}
+
+div.gallery {
+	margin:5px;
+	border:1px solid#ccc;
+	float: left;
+	width: 180px;
+	
+}
+
+div.gallery:hover {
+	border:1px solid #777;
+	
+}
+
+div.gallery img {
+	width:100%;
+	height:auto;
+	
+}
+
+div.desc {
+	padding: 15px;
+	text-align:center;
+	
+}
+
+div.all {
+	align: center;
+	
+}
