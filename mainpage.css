@@ -1,23 +1,104 @@
 body{
-	background-color: white;
-	}
-	
-	h1{
+background-color: #ffffff;
+}
+
+h1 {
+	font-family: 'Abril Fatface', cursive;
 	text-align: center;
-	}
-	h1{
-	font-family: "Helvetica";
-	}
-	
-	
-#navigation {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: MediumSeaGreen
+	font-size: 50px;
+	color: black;
 
 }
+
+h3 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 40px;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+}
+
+
+ul {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+
+div.background {
+	background-image: url("leaves.jpg");
+}
+
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+}
+div.transbox h1 {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+div.transbox h2 {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+	float: right;
+}
+* {
+    box-sizing: border-box;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+	#navigation {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #ffeaea;
+	  position: -webkit-sticky;
+	  position: sticky;
+	  top: 0;
+	}
+
 li {
 	float: left;
 }
@@ -28,4 +109,59 @@ li a {
 	padding: 14px 16px;
 	text-decoration: none;
 }
-	
+
+
+div.gallery {
+	margin: 5px;
+	border: 1px solid #ccc;
+	float: left;
+	width: 180px;
+}
+
+div.gallery:hover {
+	border: 1px solid #777;
+}
+
+div.gallery img {
+	width: 100%;
+	height: auto;
+}
+
+div.desc {
+	padding: 15px;
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffeaea;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+
+#nli {
+    float: left;
+}
+
+#nli a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+#nli a:hover {
+    background-color: #ffd6d6;
+}
+.active {
+  background-color: #ffe0e0;
+}

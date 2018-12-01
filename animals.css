@@ -24,6 +24,8 @@ p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 }
+
+
 ul {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
@@ -33,9 +35,7 @@ ul {
 
 div.background {
 	background-image: url("leaves.jpg");
-  .clearfix {
-    overflow: auto;
-  }
+
 
 }
 div.transbox {
@@ -55,6 +55,7 @@ div.transbox h2 {
   font-weight: bold;
   color: #000000;
 }
+
 div.desc {
     padding: 15px;
     text-align: center;
@@ -83,17 +84,25 @@ div.desc {
         width: 100%;
     }
 }
------------
-#navigation {
-list-style-type: none;
-margin: 0;
-padding: 0;
-overflow: hidden;
-background-color: #ffeaea;
-position: -webkit-sticky; /* Safari */
-position: sticky;
-top: 0;
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
+
+
+#navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffeaea;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 
 #nli {
     float: left;
@@ -114,10 +123,4 @@ top: 0;
 }
 .active {
   background-color: #ffe0e0;
-}
-
-#navigation {
-  position: -webkit-sticky;
- position: sticky;
- top: 0;
 }
